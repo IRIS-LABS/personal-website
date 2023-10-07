@@ -1,0 +1,39 @@
+body{
+    background-color: #F1EFEF;
+    padding-top: 2rem;
+    background-image: url("images/background.jpg");
+    font-family: Arial, sans-serif;
+}
+
+button{
+    border-radius: 2rem;
+}
+
+img{
+    width: 35vw;
+    height: 80vh;
+}
+
+.s-border-rounded{
+    border-radius: 1.5rem;
+}
+
+.left-slide-in{
+    transform: translateX(-100%);
+    transition: transform 1.2s ease;
+}
+
+.right-slide-in{
+    transform: translateX(100%);
+    transition: transform 1.2s ease;
+}
+
+.section.active .left-slide-in{
+    transform: translateX(0);
+}
+
+.section.active .right-slide-in{
+    transform: translateX(0);
+}
+
+
